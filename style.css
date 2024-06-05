@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background: #000;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+  }
+  
+  .myClass1::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #5edfff;
+    transition: .5s ease-out;
+  }
+  
+  .myClass1:hover::after {
+    width: 100%;
+  }
+  .myClass2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 36px;
+    background: #5edfff;
+    transition: .5s ease-out;
+}
+
+.myClass2:hover {
+    content: "Hover me";
+    color: black;
+    width: 100%;
+  }
